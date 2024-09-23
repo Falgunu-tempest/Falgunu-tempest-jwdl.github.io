@@ -1,9 +1,16 @@
-*, body{
+* {
   padding: 0;
   margin: 0;
 }
 
-div{
+body {
+  padding-top: 90px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.table-con {
   width: 100vw;
   background-color: transparent;
   text-align: center;
@@ -17,7 +24,70 @@ table {
   width: 100%;
 }
 
-p{
+p {
   text-align: center;
   vertical-align: middle;
+}
+
+.clock {
+  background-color: #20232a;
+}
+
+#time {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgb(6, 169, 100);
+}
+
+
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.menu a {
+  margin: 0 10px;
+  /* Memberi jarak antar menu */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  /* Efek saat link menu di-hover */
+}
+
+.clock {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .menu a {
+    font-size: 14px;
+  }
+  
+  .clock {
+    font-size: 16px;
+  }
+}
+
+#t-jam {
+  font-size: 5px;
 }
